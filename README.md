@@ -38,8 +38,19 @@ This command will discover and run all the tests defined in the test_floyd_warsh
 
 
 ## Explanation
-```
-```
+Iterative Solution
+
+The iterative version employs three nested loops to systematically evaluate every possible path between nodes while considering each node as an intermediate point. Using the product function from itertools makes the code cleaner and more concise, facilitating better readability.
+
+Recursive Solution
+
+The recursive Floyd-Warshall algorithm is a depth-first search approach that minimizes the distance between every pair of nodes by considering all possible intermediate nodes. 
+
+Base Cases: The recursion terminates when all nodes have been considered as potential intermediates (when k == MAX_LENGTH) or when all pairs have been evaluated (when i == MAX_LENGTH for a particular intermediate node).
+
+Distance Calculation: For each pair (i, j), it checks if there is a shorter path through an intermediate node k. If a shorter path exists, it updates the distance in the adjacency matrix (GRAPH).
+
+This design choice allows for clear separation of concerns and easier understanding of how the algorithm propagates improvements through recursions.
 
 ## Example
 Output Example
@@ -55,6 +66,7 @@ Iterative Test Time
 Time taken by iterative_floyd: 0.00018899999999999473 seconds
 
 
+
 Command Examples
 To check the output of the distance from each node to every other node using the default graph, you can run:
 
@@ -64,18 +76,28 @@ python main.py
 
 This will print the shortest distances as per both the recursive and iterative implementations. 
 
+
 Expected Output for the Default Graph
 For the default graph provided in the implementation:
 
 text
 
 Distance from Node 0 to Node 0 is 0
+
 Distance from Node 0 to Node 1 is 7
+
 Distance from Node 0 to Node 2 is 12
+
 Distance from Node 0 to Node 3 is 8
+
 Distance from Node 1 to Node 0 is No Path
+
 Distance from Node 1 to Node 1 is 0
+
 Distance from Node 1 to Node 2 is 5
+
 Distance from Node 1 to Node 3 is 7
+
 ...
+
 This output details the shortest path from every node to every other node based on the initial definitions in the GRAPH variable.
