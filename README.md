@@ -21,7 +21,7 @@ Clone the repository:
 
 bash
 
-$git clone 
+$git clone git@github.com:JCKH1016/Mid-Module-Assignment.git
 $cd <repository-directory>
 
 ## Usage
