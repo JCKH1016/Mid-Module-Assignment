@@ -17,20 +17,65 @@ This repository contains Python implementations of the Floyd-Warshall algorithm 
 
 ## Install
 
-Clone the repository:
+Clone the repository to local directory:
 
 bash
 
-$git clone git@github.com:JCKH1016/Mid-Module-Assignment.git
-$cd <repository-directory>
+git clone git@github.com:JCKH1016/Mid-Module-Assignment.git
+
+Install dependencies as requirements.txt required.
 
 ## Usage
 
-```
-```
+Running Performance Tests
+To run the performance tests for both the recursive and iterative implementations, execute the following script:
+
+bash
+
+python performance_test.py
+Running Unit Tests
+To execute the unit tests, run the following command:
+
+bash
+
+python -m unittest test_floyd_warshall.py
+This command will discover and run all the tests defined in the test_floyd_warshall.py.
+
 
 ## Explanation
 ```
 ```
 
 ## Example
+Output Example
+When you run performance_test.py, you may see output similar to:
+
+text
+
+Recursion Test Time
+Time taken by recursive_floyd_warshall: 0.000423 seconds
+Iterative Test Time
+Time taken by iterative_floyd: 0.000198 seconds
+Command Examples
+To check the output of the distance from each node to every other node using the default graph, you can run:
+
+bash
+
+python main.py
+This will print the shortest distances as per both the recursive and iterative implementations. 
+
+Expected Output for the Default Graph
+For the default graph provided in the implementation:
+
+text
+
+Distance from Node 0 to Node 0 is 0
+Distance from Node 0 to Node 1 is 7
+Distance from Node 0 to Node 2 is 12
+Distance from Node 0 to Node 3 is 8
+Distance from Node 1 to Node 0 is No Path
+Distance from Node 1 to Node 1 is 0
+Distance from Node 1 to Node 2 is 5
+Distance from Node 1 to Node 3 is 7
+...
+This output details the shortest path from every node to every other node based on the initial definitions in the GRAPH variable.
