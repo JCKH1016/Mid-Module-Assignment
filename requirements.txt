@@ -1,0 +1,5 @@
+Python v2024.14.0
+Pylance v2024.9.1
+python Debugger v2024.10.0
+Live Preview v0.4.14
+.NET Install Tool v2.1.5
