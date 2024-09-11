@@ -19,26 +19,21 @@ This repository contains Python implementations of the Floyd-Warshall algorithm 
 
 Clone the repository to local directory:
 
-bash
-
 git clone git@github.com:JCKH1016/Mid-Module-Assignment.git
 
 Install dependencies as requirements.txt required.
 
 ## Usage
-
-Running Performance Tests
+#Running Performance Tests
 To run the performance tests for both the recursive and iterative implementations, execute the following script:
 
-bash
-
 python performance_test.py
-Running Unit Tests
+
+#Running Unit Tests
 To execute the unit tests, run the following command:
 
-bash
-
 python -m unittest test_floyd_warshall.py
+
 This command will discover and run all the tests defined in the test_floyd_warshall.py.
 
 
@@ -48,20 +43,25 @@ This command will discover and run all the tests defined in the test_floyd_warsh
 
 ## Example
 Output Example
+
 When you run performance_test.py, you may see output similar to:
 
-text
 
 Recursion Test Time
-Time taken by recursive_floyd_warshall: 0.000423 seconds
+Time taken by recursive_floyd_warshall: 2.0999999999993246e-05 seconds
+
+
 Iterative Test Time
-Time taken by iterative_floyd: 0.000198 seconds
+Time taken by iterative_floyd: 0.00018899999999999473 seconds
+
+
 Command Examples
 To check the output of the distance from each node to every other node using the default graph, you can run:
 
-bash
 
 python main.py
+
+
 This will print the shortest distances as per both the recursive and iterative implementations. 
 
 Expected Output for the Default Graph
