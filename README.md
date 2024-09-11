@@ -13,7 +13,7 @@
 ## Background
 The Floyd Warshall algorithm is an example of dynamic programming. It is used to find shortest paths between all pairs of vertices in a graph with positive or negative edge weights. It is a dynamic-programming algorithm; shortest path distances are calculated bottom up, these estimates are refined until the shortest path is obtained. Positive and zero weight cycles in the graph are ignored, and negative weight cycles are detected.
 
-This repository contains Python implementations of the Floyd-Warshall algorithm using both iterative and recursive approaches. Additionally, performance testing and unit testing are included for both implementations.![image](https://github.com/user-attachments/assets/d7426ded-0d0a-49fe-836c-1b7513857bee)
+This repository contains Python implementations of the Floyd-Warshall algorithm using both iterative and recursive approaches. The Floyd Warshall Algorithm was given in iteraive version.The tasks are rewirte the algorithm in recursive version. Additionally, performance testing and unit testing are included for implementations.
 
 ## Install
 
