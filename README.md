@@ -1,8 +1,8 @@
-# PRACTICAL ASSIGNMENT: PROGRAMMING# 
-# Floyd Warshall Algorithm#
+# PRACTICAL ASSIGNMENT: PROGRAMMING
+# Floyd Warshall Algorithm
 =================================================
 
-## Table of Contents
+## Contents
 
 - [Background](#background)
 - [Install](#install)
