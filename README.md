@@ -82,35 +82,35 @@ Time taken by iterative_floyd: 0.00018899999999999473 seconds
 
 
 Command Examples
-To check the output of the distance from each node to every other node using the default graph, you can run:
+To handles the recursive logic and processes the Floyd-Warshall algorith without loops. Using the default graph, you can run:
 
 
-python main.py
+python recursive_floyd.py
 
 
-This will print the shortest distances as per both the recursive and iterative implementations. 
+This will print the calculated results. 
 
 
-Expected Output for the Default Graph
-For the default graph provided in the implementation:
+Expected Output provided in the implementation:
 
 
 Distance from Node 0 to Node 0 is 0
-
 Distance from Node 0 to Node 1 is 7
-
-Distance from Node 0 to Node 2 is 12
-
+Distance from Node 0 to Node 2 is No Path
 Distance from Node 0 to Node 3 is 8
-
 Distance from Node 1 to Node 0 is No Path
-
 Distance from Node 1 to Node 1 is 0
-
 Distance from Node 1 to Node 2 is 5
-
-Distance from Node 1 to Node 3 is 7
+Distance from Node 1 to Node 3 is No Path
+Distance from Node 2 to Node 0 is No Path
+Distance from Node 2 to Node 1 is No Path
+Distance from Node 2 to Node 2 is 0
+Distance from Node 2 to Node 3 is 2
+Distance from Node 3 to Node 0 is No Path
+Distance from Node 3 to Node 1 is No Path
+Distance from Node 3 to Node 2 is No Path
+Distance from Node 3 to Node 3 is 0
 
 ...
 
-This output details the shortest path from every node to every other node based on the initial definitions in the GRAPH variable.
+
