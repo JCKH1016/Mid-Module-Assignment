@@ -24,8 +24,19 @@ git clone git@github.com:JCKH1016/Mid-Module-Assignment.git
 Install dependencies as requirements.txt required.
 
 ## Usage
+#Running Floyd Warshall Algorithm in iterative version
+To run the iterative implementation, execute the following script:
+
+python iterative_floyd.py
+
+
+#Running Floyd Warshall Algorithm in recursive version
+To run the recursive implementation, execute the following script:
+
+python recursive_floyd.py
+
 #Running Performance Tests
-To run the performance tests for both the recursive and iterative implementations, execute the following script:
+To run the performance tests for both the iterative and recursive implementations, execute the following script:
 
 python performance_test.py
 
@@ -38,19 +49,22 @@ This command will discover and run all the tests defined in the test_floyd_warsh
 
 
 ## Explanation
-Iterative Solution
+Floyd Warshall Algoritham - Iterative version 
 
-The iterative version employs three nested loops to systematically evaluate every possible path between nodes while considering each node as an intermediate point. Using the product function from itertools makes the code cleaner and more concise, facilitating better readability.
+The iterative version is given by the task, it employs three nested loops to systematically evaluate every possible path between nodes while considering each node as an intermediate point. Using the product function from itertools makes the code cleaner and more concise, facilitating better readability.
 
-Recursive Solution
+Floyd Warshall Algoritham - Recursive version
 
-The recursive Floyd-Warshall algorithm is a depth-first search approach that minimizes the distance between every pair of nodes by considering all possible intermediate nodes. 
+The exercise requies us to rewrite the algorithm recursively. The recursive Floyd-Warshall algorithm is a depth-first search approach that minimizes the distance between every pair of nodes by considering all possible intermediate nodes. 
 
-Base Cases: The recursion terminates when all nodes have been considered as potential intermediates (when k == MAX_LENGTH) or when all pairs have been evaluated (when i == MAX_LENGTH for a particular intermediate node).
+Base CAse and Recursion:
+- If k reaches MAX_LENGTH, the recursion ends as all nodes are processed.
+- If i reaches MAX_LENGTH, proceed to the next intermediate node k.
+- If j reaches MAX_LENGTH, proceed to the next starting node i.
 
 Distance Calculation: For each pair (i, j), it checks if there is a shorter path through an intermediate node k. If a shorter path exists, it updates the distance in the adjacency matrix (GRAPH).
 
-This design choice allows for clear separation of concerns and easier understanding of how the algorithm propagates improvements through recursions.
+This design handles the recursive logic and processes the Floyd-Warshall algorithm without loops. 
 
 ## Example
 Output Example
@@ -80,7 +94,6 @@ This will print the shortest distances as per both the recursive and iterative i
 Expected Output for the Default Graph
 For the default graph provided in the implementation:
 
-text
 
 Distance from Node 0 to Node 0 is 0
 
