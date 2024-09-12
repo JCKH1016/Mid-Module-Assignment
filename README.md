@@ -57,7 +57,7 @@ Floyd Warshall Algoritham - Recursive version
 
 The exercise requies us to rewrite the algorithm recursively. The recursive Floyd-Warshall algorithm is a depth-first search approach that minimizes the distance between every pair of nodes by considering all possible intermediate nodes. 
 
-Base CAse and Recursion:
+Base Case and Recursion:
 - If k reaches MAX_LENGTH, the recursion ends as all nodes are processed.
 - If i reaches MAX_LENGTH, proceed to the next intermediate node k.
 - If j reaches MAX_LENGTH, proceed to the next starting node i.
