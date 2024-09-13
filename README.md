@@ -67,20 +67,6 @@ Distance Calculation: For each pair (i, j), it checks if there is a shorter path
 This design handles the recursive logic and processes the Floyd-Warshall algorithm without loops. 
 
 ## Example
-Output Example
-
-When you run performance_test.py, you may see output similar to:
-
-
-Recursion Test Time
-Time taken by recursive_floyd_warshall: 2.0999999999993246e-05 seconds
-
-
-Iterative Test Time
-Time taken by iterative_floyd: 0.00018899999999999473 seconds
-
-
-
 Command Examples
 To handles the recursive logic and processes the Floyd-Warshall algorith without loops. Using the default graph, you can run:
 
@@ -125,6 +111,18 @@ Distance from Node 3 to Node 1 is No Path
 Distance from Node 3 to Node 2 is No Path
 
 Distance from Node 3 to Node 3 is 0
+
+Output Example
+
+When you run performance_test.py, you may see output similar to:
+
+
+Recursion Test Time
+Time taken by recursive_floyd_warshall: 2.0999999999993246e-05 seconds
+
+
+Iterative Test Time
+Time taken by iterative_floyd: 0.00018899999999999473 seconds
 
 ...
 
